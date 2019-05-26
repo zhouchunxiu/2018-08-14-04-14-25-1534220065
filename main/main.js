@@ -13,13 +13,12 @@ module.exports = function main(num) {
     var index = 0;
     while(index < 3){
         for(var i = 0; i < numarr.length; i++){
-            resultarr.push(arr[index][numarr[i]]);
+            resultarr[index].push(arr[index][numarr[i]]);
         }
-        result.push(resultarr.join(" "));
-        resultarr = [];
+        result.push(resultarr[index].join(" "));
         index++;
     }
     var text = result[0] + "\n" + result[1] + "\n" + result[2];
-    console.log(result);
+    console.log("numarr:" + numarr);
     return text;
 };
