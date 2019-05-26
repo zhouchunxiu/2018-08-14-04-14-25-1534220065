@@ -19,7 +19,7 @@ module.exports = function main(num) {
         result.push(resultarr[index].join(" "));
         index++;
     }
-    var text = result[0] + "\n" + result[1] + "\n" + result[2];
+    var text = result[0] + "\n" + result[1] + "\n" + result[2] + "\n";
     console.log(result);
     return text;
 };
