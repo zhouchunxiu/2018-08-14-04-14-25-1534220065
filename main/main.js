@@ -18,6 +18,6 @@ module.exports = function main(num) {
         resultarr = [];
     }
 
-    //console.log("Debug Info");
+    console.log("result");
     return result;
 };
