@@ -4,9 +4,10 @@ module.exports = function main(num) {
                ['|_|','..|','|_.','._|','..|','._|','|_|','..|','|_|','..|']];
     var numarr = [];
     while(num > 0){
-        numarr.unshift(num%10);
+        numarr.push(num%10);
         num /= 10;
     }
+    numarr.reverse();
     var resultarr = [];
     var result = [];
     var index = 0;
@@ -14,11 +15,11 @@ module.exports = function main(num) {
         for(var i = 0; i < numarr.length; i++){
             resultarr.push(arr[index][numarr[i]]);
         }
-        result.push(resultarr.join(' '));
+        result.push(resultarr.join(" "));
         resultarr = [];
         index++;
     }
-
+    var text = result[0] + "\n" + result[1] + "\n" + result[2];
     console.log(result);
-    return result[0];
+    return text;
 };
