@@ -8,7 +8,8 @@ module.exports = function main(num) {
         num /= 10;
     }
     numarr.reverse();
-    var resultarr = [];
+    console.log("numarr:" + numarr);
+    var resultarr = [[],[],[]];
     var result = [];
     var index = 0;
     while(index < 3){
@@ -19,6 +20,6 @@ module.exports = function main(num) {
         index++;
     }
     var text = result[0] + "\n" + result[1] + "\n" + result[2];
-    console.log("numarr:" + numarr);
+
     return text;
 };
