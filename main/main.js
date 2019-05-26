@@ -14,11 +14,11 @@ module.exports = function main(num) {
         for(var i = 0; i < numarr.length; i++){
             resultarr.push(arr[index][num[i]]);
         }
-        result.push(resultarr.join(' ')+'\n');
+        result.push(resultarr.join(' '));
         resultarr = [];
         index++;
     }
 
     //console.log("result");
-    return result;
+    return result[0] + '\n' + result[1] + '\n' + result[2];
 };
