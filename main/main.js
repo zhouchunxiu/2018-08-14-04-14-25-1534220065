@@ -12,7 +12,7 @@ module.exports = function main(num) {
     var index = 0;
     while(index < 3){
         for(var i = 0; i < numarr.length; i++){
-            resultarr.push(arr[index][num[i]]);
+            resultarr.push(arr[index][numarr[i]]);
         }
         result.push(resultarr.join(' '));
         resultarr = [];
@@ -20,5 +20,5 @@ module.exports = function main(num) {
     }
 
     //console.log("result");
-    return result[0] + '\n' + result[1] + '\n' + result[2];
+    return result[0] + "\n" + result[1] + "\n" + result[2];
 };
