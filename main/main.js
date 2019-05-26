@@ -19,6 +19,6 @@ module.exports = function main(num) {
         index++;
     }
 
-    console.log(result[0] + "\n" + result[1] + "\n" + result[2]);
-    return result[0] + "\n" + result[1] + "\n" + result[2];
+    console.log(result);
+    return result[0];
 };
